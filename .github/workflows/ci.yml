@@ -10,3 +10,5 @@ jobs:
           python-version: '3.x'
       - run: python -m pip install -U pytest
       - run: pytest -q
+        env:
+          PYTHONPATH: ${{ github.workspace }}
